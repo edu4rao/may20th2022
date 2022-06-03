@@ -5,4 +5,6 @@ sudo add-apt-repository ppa:openjdk-r/ppa
 sudo apt-get update
 sudo apt-get install -y openjdk-8-jdk
 
-java -jar agent.jar -jnlpUrl http://172.31.10.193:8080/computer/worker1/jenkins-agent.jnlp -secret 3815078968e5f36252270a8839002c16a81c11a8843a21f9806d0bfa79085f0c -workDir "/root/jenkins"
+java -jar agent.jar -jnlpUrl http://3.101.20.156:8080/computer/jenkins%2Dagent/jenkins-agent.jnlp -secret @secret-file -workDir "/root/jenkins"
+
+
